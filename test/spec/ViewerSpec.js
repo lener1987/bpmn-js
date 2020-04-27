@@ -635,7 +635,7 @@ describe('Viewer', function() {
         // then
         expect(events).to.eql([
           [ 'import.parse.start', [ 'xml' ] ],
-          [ 'import.parse.complete', ['error', 'definitions', 'context' ] ],
+          [ 'import.parse.complete', ['error', 'definitions', 'elementsById', 'references', 'warnings' ] ],
           [ 'import.render.start', [ 'definitions' ] ],
           [ 'import.render.complete', [ 'error', 'warnings' ] ],
           [ 'import.done', [ 'error', 'warnings' ] ]
@@ -1673,7 +1673,7 @@ describe('Viewer', function() {
           // then
           expect(events).to.eql([
             [ 'import.parse.start', [ 'xml' ] ],
-            [ 'import.parse.complete', ['error', 'definitions', 'context' ] ],
+            [ 'import.parse.complete', ['error', 'definitions', 'elementsById', 'references', 'warnings' ] ],
             [ 'import.render.start', [ 'definitions' ] ],
             [ 'import.render.complete', [ 'error', 'warnings' ] ],
             [ 'import.done', [ 'error', 'warnings' ] ]
